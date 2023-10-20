@@ -4,7 +4,7 @@ import React from 'react';
 export default function Home() {
   React.useEffect(() => {
     setTimeout(() => {
-      location.href = "app://sf.client";
+      location.href = "sfclient://app";
       window.close();
     }, 200)
   }, []);
