@@ -4,7 +4,7 @@ import React from 'react';
 export default function Home() {
   React.useEffect(() => {
     setTimeout(() => {
-      location.href = "stump://";
+      location.href = "app://sf.client";
       window.close();
     }, 200)
   }, []);
