@@ -4,7 +4,8 @@ import React from 'react';
 export default function Home() {
   React.useEffect(() => {
     setTimeout(() => {
-      location.href = "sfclient://app";
+      const searchpath = location.search;
+      location.href = "sfclient://app" + searchpath;
       window.close();
     }, 200)
   }, []);
