@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css';
 import React from 'react';
 
 export default function Home() {
-  const aRef = React.useRef<any>(null);
+  const aRef = React.useRef(null);
   React.useEffect(() => {
     setTimeout(() => {
       aRef.current?.click();
