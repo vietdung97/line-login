@@ -13,7 +13,8 @@ export default function Home() {
   }, []);
   return (
     <div className={styles.container}>
-      <a ref={aRef} href={"sfclient://app" + search} target='_blank'>Square Fitness</a>
+      {/* <a ref={aRef} href={"sfclient://app" + search} target='_blank'>Square Fitness</a> */}
+      <input ref={aRef} type="url" value={"sfclient://app" + search} />
     </div>
   );  
 }
