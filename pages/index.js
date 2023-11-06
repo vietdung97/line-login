@@ -11,12 +11,11 @@ export default function Home() {
   }, 1000);
   }, []);
   const withLocation = () => {
-    alert('open link');
-    window.location.href = 'stump://';
+    window.location.href = 'sfclient://';
 };
 const withATag = () => {
     var a = document.createElement('a');
-    a.href = 'stump://';
+    a.href = 'sfclient://';
     a.click();
     a.remove();
 };
