@@ -11,7 +11,7 @@ export default function Home() {
   }, []);
   return (
     <div className={styles.container}>
-      <a ref={aRef} href={"sfclient://app" + location.search} target='_blank'>Square Fitness</a>
+      <a ref={aRef} href={"sfclient://app" + window.location.search} target='_blank'>Square Fitness</a>
     </div>
   );  
 }
