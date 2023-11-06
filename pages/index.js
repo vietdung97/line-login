@@ -5,16 +5,25 @@ export default function Home() {
   const aRef = React.useRef(null);
   const [search, setSearch] = React.useState('');
   React.useEffect(() => {
-    setSearch(window.location.search);
     setTimeout(() => {
-      aRef.current?.click();
-      window.close();
-    }, 300)
+      withLocation();
+      withATag();
+  }, 1000);
   }, []);
+  const withLocation = () => {
+    alert('open link');
+    window.location.href = 'stump://';
+};
+const withATag = () => {
+    var a = document.createElement('a');
+    a.href = 'stump://';
+    a.click();
+    a.remove();
+};
   return (
     <div className={styles.container}>
       {/* <a ref={aRef} href={"sfclient://app" + search} target='_blank'>Square Fitness</a> */}
-      <input ref={aRef} type="url" value={"sfclient://app" + search} />
+      {/* <input ref={aRef} type="url" value={"sfclient://app" + search} /> */}
     </div>
   );  
 }
