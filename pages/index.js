@@ -10,7 +10,7 @@ export default function Home() {
 
   const withATag = () => {
     var a = document.createElement("a");
-    a.href = "sfclient://";
+    a.href = "sfclient://app" + search;
     a.click();
     a.remove();
     setTimeout(() => {
